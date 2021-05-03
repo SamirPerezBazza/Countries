@@ -1,0 +1,135 @@
+:root{
+    --darkBlue: hsl(209, 23%, 22%);
+    --veryDarkBlueDMBG : hsl(207, 26%, 17%);
+    --veryDarkBlueLMT: hsl(200, 15%, 8%);
+    --darkGrayLMI: hsl(0, 0%, 52%);
+    --veryLightGrayLMB: hsl(0, 0%, 98%);
+    --whiteDMT-LME: hsl(0, 0%, 100%);
+}
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--veryDarkBlueDMBG);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+    color: var(--whiteDMT-LME);
+}
+
+header{
+    background-color: var(--darkBlue);
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.title-container{
+    margin-left: 50px;
+    padding: 0;
+    
+}
+
+li{
+    display: inline-block;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    margin-right: 5em;
+}
+
+button{
+    background-color: var(--darkBlue);
+    color: var(--whiteDMT-LME);
+    font-family:'Nunito Sans', sans-serif;
+    margin: 0 1rem;
+}
+
+.bar-container{
+    margin: 2rem 4rem;
+    max-width: 40%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.bar-input{
+    width: 100%;
+    padding: 0.5em;
+    color: var(--whiteDMT-LME);
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--darkBlue);
+    border-color: var(--darkBlue);
+    box-shadow: var(--darkBlue);
+}
+
+.bar-input:focus{
+    outline: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+}
+
+.container-card{
+    background-color: var(--darkBlue);
+    max-width: 21%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+    
+}
+
+.container-text{
+  padding: 10px 20px;
+}
+.card-image{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+@media only screen and (max-width: 375px) {
+    
+.container-card{
+    max-width: 80%;
+}
+
+.bar-container{
+    max-width: 80%;
+}
+
+    
+}
